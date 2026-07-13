@@ -1,0 +1,6 @@
+PyPDF2
+huggingface_hub[inference]
+sentence-transformers
+chromadb
+numpy
+python-dotenv

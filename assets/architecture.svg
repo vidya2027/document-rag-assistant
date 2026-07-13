@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="420" viewBox="0 0 1400 420">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#555"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#222}.t{font-size:20px;font-weight:bold}.s{font-size:15px}.b{fill:#fff;stroke:#555;stroke-width:2;rx:14}.line{stroke:#555;stroke-width:2;marker-end:url(#a)}</style>
+<text x="700" y="35" text-anchor="middle" class="t">Document RAG Assistant Architecture</text>
+<rect class="b" x="35" y="90" width="160" height="75"/><text x="115" y="120" text-anchor="middle" class="t">PDF / TXT</text><text x="115" y="145" text-anchor="middle" class="s">documents/ folder</text>
+<rect class="b" x="235" y="90" width="150" height="75"/><text x="310" y="132" text-anchor="middle" class="t">Load &amp; Clean</text>
+<rect class="b" x="425" y="90" width="160" height="75"/><text x="505" y="120" text-anchor="middle" class="t">Recursive</text><text x="505" y="145" text-anchor="middle" class="t">Chunking</text>
+<rect class="b" x="625" y="90" width="190" height="75"/><text x="720" y="120" text-anchor="middle" class="t">Local Embeddings</text><text x="720" y="145" text-anchor="middle" class="s">all-MiniLM-L6-v2</text>
+<rect class="b" x="855" y="90" width="160" height="75"/><text x="935" y="120" text-anchor="middle" class="t">ChromaDB</text><text x="935" y="145" text-anchor="middle" class="s">persistent vectors</text>
+<rect class="b" x="855" y="260" width="160" height="75"/><text x="935" y="290" text-anchor="middle" class="t">Top-K Context</text><text x="935" y="315" text-anchor="middle" class="s">semantic retrieval</text>
+<rect class="b" x="625" y="260" width="190" height="75"/><text x="720" y="290" text-anchor="middle" class="t">Grounded Prompt</text><text x="720" y="315" text-anchor="middle" class="s">context + question</text>
+<rect class="b" x="385" y="260" width="200" height="75"/><text x="485" y="290" text-anchor="middle" class="t">HF InferenceClient</text><text x="485" y="315" text-anchor="middle" class="s">HF_TOKEN authentication</text>
+<rect class="b" x="145" y="260" width="180" height="75"/><text x="235" y="290" text-anchor="middle" class="t">Grounded Answer</text><text x="235" y="315" text-anchor="middle" class="s">answer + sources</text>
+<rect class="b" x="1090" y="260" width="160" height="75"/><text x="1170" y="290" text-anchor="middle" class="t">User Query</text><text x="1170" y="315" text-anchor="middle" class="s">same embed model</text>
+<line class="line" x1="195" y1="127" x2="230" y2="127"/><line class="line" x1="385" y1="127" x2="420" y2="127"/><line class="line" x1="585" y1="127" x2="620" y2="127"/><line class="line" x1="815" y1="127" x2="850" y2="127"/>
+<line class="line" x1="1170" y1="260" x2="1170" y2="205"/><line class="line" x1="1170" y1="205" x2="935" y2="205"/><line class="line" x1="935" y1="205" x2="935" y2="170"/>
+<line class="line" x1="935" y1="165" x2="935" y2="255"/><line class="line" x1="850" y1="297" x2="820" y2="297"/><line class="line" x1="625" y1="297" x2="590" y2="297"/><line class="line" x1="385" y1="297" x2="330" y2="297"/>
+</svg>
