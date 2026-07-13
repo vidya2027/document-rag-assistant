@@ -1,0 +1,15 @@
+Medical imaging systems create visual representations of internal anatomy for clinical review. Common
+modalities include computed tomography, magnetic resonance imaging, ultrasound, and X-ray imaging.
+
+Artificial intelligence can support medical imaging workflows in tasks such as image segmentation,
+classification, detection, measurement, and workflow prioritization. Segmentation assigns pixels or voxels
+to anatomical structures or regions of interest. Detection systems attempt to identify candidate findings
+or objects in an image.
+
+Medical imaging AI systems require careful validation. Performance should be evaluated on representative
+data and relevant clinical use cases. Dataset shift, image acquisition differences, device variation, and
+population differences may affect model performance.
+
+Human oversight is important in safety-critical healthcare workflows. An AI output should be interpreted
+within the intended use of the system and the applicable clinical process. Monitoring, traceability, data
+governance, and validation are important engineering considerations.

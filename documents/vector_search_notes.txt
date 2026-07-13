@@ -1,0 +1,15 @@
+Semantic search retrieves information according to meaning rather than relying only on exact keyword matches.
+An embedding model converts a text passage into a dense numerical vector. The same embedding model should be
+used for stored document chunks and incoming user queries.
+
+Sentence Transformers can generate embeddings locally. Normalized embeddings are useful when comparing
+semantic direction. In a retrieval pipeline, document embeddings can be generated during indexing and stored
+with the original text and metadata.
+
+ChromaDB is a vector database that can store documents, embeddings, metadata, and unique identifiers.
+A query embedding can be supplied to a ChromaDB collection to retrieve the nearest stored vectors.
+The number of retrieved results is commonly called top-K.
+
+Increasing K provides more context but can also add irrelevant information and increase prompt size.
+A production retrieval system may add keyword search, metadata filters, reranking, caching, document hashing,
+and automated retrieval evaluation.

@@ -1,0 +1,16 @@
+Retrieval-Augmented Generation, or RAG, combines information retrieval with a language model.
+A RAG system first searches a knowledge base for text that is relevant to a user's question.
+The retrieved text is then inserted into the prompt as context before the language model generates an answer.
+
+A basic RAG pipeline contains document loading, text preprocessing, chunking, embedding generation,
+vector storage, semantic retrieval, prompt construction, and answer generation. Embeddings represent
+semantic meaning as numerical vectors. A vector database compares the query vector with stored document
+vectors to find related chunks.
+
+Chunking is important because long documents may contain several unrelated topics. Very small chunks can
+lose context, while very large chunks can introduce irrelevant information. Sentence-aware or recursive
+chunking tries to preserve natural semantic boundaries.
+
+RAG can reduce unsupported answers when the model is instructed to answer only from retrieved evidence.
+However, RAG does not guarantee factual correctness. Poor source documents, weak chunking, or irrelevant
+retrieval can still produce poor answers. Retrieval results and source metadata should therefore be inspected.
